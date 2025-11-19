@@ -1,9 +1,8 @@
-package org.Conector;
+package Importante;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
-import java.awt.event.ActionEvent;
 import java.sql.*;
 import java.io.*;
 import java.util.Vector;
@@ -132,7 +131,7 @@ public class ProductosJFrame extends JFrame {
                 String linea;
                 conn.setAutoCommit(false); // Mejorar rendimiento
                 PreparedStatement ps = conn.prepareStatement(
-                        "INSERT INTO products VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
+                        "INSERT INTO products VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
                 );
                 while ((linea = br.readLine()) != null) {
                     String[] datos = linea.split(",");
