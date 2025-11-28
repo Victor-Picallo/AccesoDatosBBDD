@@ -74,8 +74,6 @@ public class ProductosJFrame extends JFrame {
                 modeloTabla.addRow(fila);
                 numRegistros++;
             }
-            // Mensaje opcional si quieres
-            // JOptionPane.showMessageDialog(this, "Se han mostrado " + numRegistros + " registros.");
         } catch (SQLException ex) {
             JOptionPane.showMessageDialog(this, "Error al mostrar productos: " + ex.getMessage());
         }
